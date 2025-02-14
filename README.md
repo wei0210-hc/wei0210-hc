@@ -14,3 +14,14 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+name: Licenses and permissions
+with:
+  filename: metrics.plugin.licenses.svg
+  token: ${{ secrets.METRICS_TOKEN }}
+  base: ""
+  template: repository
+  repo: metrics
+  plugin_licenses: yes
+  plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
+
